@@ -37,4 +37,4 @@ function wpcf7sg_generate_number( $wpcf7_data ) {
 		$wpcf7_data->set_properties( $properties );
 	}
 }
-add_action( 'wpcf7_before_send_mail', 'wpcf7_do_something_else' );
+add_action( 'wpcf7_before_send_mail', 'wpcf7sg_generate_number' );
